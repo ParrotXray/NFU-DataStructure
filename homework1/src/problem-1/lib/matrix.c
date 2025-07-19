@@ -5,10 +5,14 @@ static int32_t get_index(MatrixList* matrix, int32_t row, int32_t col) {
 }
 
 MatrixList* new_matrix(int32_t rows, int32_t cols) {
-    if (rows <= 0 || cols <= 0) return NULL;
+    if (rows <= 0 || cols <= 0) {
+        return NULL;
+    }
     
     MatrixList* matrix = (MatrixList*)malloc(sizeof(MatrixList));
-    if (matrix == NULL) return NULL;
+    if (matrix == NULL) {
+        return NULL;
+    }
     
     matrix->rows = rows;
     matrix->cols = cols;

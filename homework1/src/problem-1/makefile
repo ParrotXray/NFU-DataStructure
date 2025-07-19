@@ -6,7 +6,7 @@ OBJ_DIR := $(BUILD_DIR)/obj
 BIN_DIR := $(BUILD_DIR)/bin
 INCLUDE_DIR := includes
 NAME := programs
-CFLAGS := -O2 -std=c++17 -Wall -Wextra -Wno-unknown-pragmas
+CFLAGS := -O2 -std=c++17 -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-result
 LDFLAGS := -O2
 INCLUDES := -I$(INCLUDE_DIR)
 

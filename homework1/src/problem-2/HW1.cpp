@@ -11,7 +11,9 @@ typedef struct {
 
 PowerSetMatrix* new_powerset_matrix(int32_t max_subsets, int32_t max_elements) {
     PowerSetMatrix* ps = (PowerSetMatrix*)malloc(sizeof(PowerSetMatrix));
-    if (ps == NULL) return NULL;
+    if (ps == NULL) {
+        return NULL;
+    }
     
     ps->matrix = new_matrix(max_subsets, max_elements);
     if (ps->matrix == NULL) {
@@ -244,9 +246,9 @@ int main() {
     PowerSetMatrix* result_empty = powerset_matrix_recursive(NULL, 0);
     print_powerset_matrix(result_empty);
     
-    int32_t set2[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+    int32_t set2[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25};
 
-    calculate(set2, 16);
+    calculate(set2, 25);
     
     delete_powerset_matrix(result1);
     delete_powerset_matrix(result_empty);

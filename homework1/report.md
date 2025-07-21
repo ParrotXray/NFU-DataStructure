@@ -351,6 +351,9 @@ powerset({1,2}):
 建構請使用Ubuntu或WSL: 
 
 ```bash
+# Clone 
+$ git clone https://github.com/ParrotXray/NFU-DataStructure
+
 # 問題一
 $ cd homework1/src/problem-1
 $ make run
